@@ -12,3 +12,14 @@ console.log(array.sort());
 const arrayOfNames = ["Fran", "Leon", "Ale", "Jenna", "Bleda", "Hadi"];
 
 console.log(arrayOfNames.sort());
+
+// Bonuses
+
+console.log(arrayOfNames.sort((a, b) => {
+
+  if (a.length > b.length) return -1
+  if (b.length > a.length) return 1
+
+  return 0
+
+}));
